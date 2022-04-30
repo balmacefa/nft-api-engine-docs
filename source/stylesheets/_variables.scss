@@ -14,43 +14,82 @@ License for the specific language governing permissions and limitations
 under the License.
 */
 
-
 ////////////////////////////////////////////////////////////////////////////////
 // CUSTOMIZE SLATE
 ////////////////////////////////////////////////////////////////////////////////
 // Use these settings to help adjust the appearance of Slate
 
+:root {
+  --nav-bg: #374151;
+  --examples-bg: #4b5563;
+  --code-bg: #1f2937;
+  --code-annotation-bg: #191d1f;
+  --nav-subitem-bg: #1f2937;
+  --nav-active-bg: #be185d;
+  --nav-active-parent-bg: #4f46e5;
+  --lang-select-border: #000;
+  --lang-select-bg: #1e2224;
+  --lang-select-active-bg: #4f46e5;
+  --lang-select-pressed-bg: #111;
+  --aside-notice-bg: #a7f3d0;
+  --aside-warning-bg: #c97a7e;
+  --aside-success-bg: #6ac174;
+  --search-notice-bg: #c97a7e;
+  --main-bg: #f3f4f6;
+  --main-bg-lighten-1: #f3f4f6;
+  --main-bg-lighten-2: #f3f4f6;
+  --main-text: #111827;
+  --nav-text: #fff;
+  --nav-active-text: #fff;
+  --nav-active-parent-text: #fff;
+  --lang-select-text: #fff;
+  --lang-select-active-text: #fff;
+  --lang-select-pressed-text: #fff;
+  --nav-footer-border-color: #666;
+  --search-box-border-color: #be185d;
+}
 
 // BACKGROUND COLORS
 ////////////////////
-$nav-bg: #2E3336 !default;
-$examples-bg: #2E3336 !default;
-$code-bg: #1E2224 !default;
-$code-annotation-bg: #191D1F !default;
-$nav-subitem-bg: #1E2224 !default;
-$nav-active-bg: #0F75D4 !default;
-$nav-active-parent-bg: #1E2224 !default; // parent links of the current section
-$lang-select-border: #000 !default;
-$lang-select-bg: #1E2224 !default;
-$lang-select-active-bg: $examples-bg !default; // feel free to change this to blue or something
-$lang-select-pressed-bg: #111 !default; // color of language tab bg when mouse is pressed
-$main-bg: #F3F7F9 !default;
-$aside-notice-bg: #8fbcd4 !default;
-$aside-warning-bg: #c97a7e !default;
-$aside-success-bg: #6ac174 !default;
-$search-notice-bg: #c97a7e !default;
+
+$nav-bg:var(--nav-bg);
+$examples-bg:var(--examples-bg);
+$code-bg:var(--code-bg);
+$code-annotation-bg:var(--code-annotation-bg);
+$nav-subitem-bg:var(--nav-subitem-bg);
+$nav-active-bg:var(--nav-active-bg);
+$nav-active-parent-bg:var(--nav-active-parent-bg);
+$nav-active-parent-text:var(--nav-active-parent-text);
+$nav-active-text:var(--nav-active-text);
+$nav-footer-border-color:var(--nav-footer-border-color);
+$search-box-border-color:var(--search-box-border-color);
+$lang-select-border:var(--lang-select-border);
+$lang-select-bg:var(--lang-select-bg);
+$lang-select-active-bg:var(--lang-select-active-bg);
+$lang-select-active-text:var(--lang-select-active-text);
+$lang-select-pressed-bg:var(--lang-select-pressed-bg);
+$lang-select-pressed-text:var(--lang-select-pressed-text);
+$main-bg:var(--main-bg);
+$aside-notice-bg:var(--aside-notice-bg);
+$aside-warning-bg:var(--aside-warning-bg);
+$aside-success-bg:var(--aside-success-bg);
+$search-notice-bg:var(--search-notice-bg);
+
+
+$main-bg: var(--main-bg);
+$main-bg-lighten-1: var(--main-bg-lighten-1);
+$main-bg-lighten-2: var(--main-bg-lighten-2);
 
 
 // TEXT COLORS
 ////////////////////
-$main-text: #333 !default; // main content text color
-$nav-text: #fff !default;
-$nav-active-text: #fff !default;
-$nav-active-parent-text: #fff !default; // parent links of the current section
-$lang-select-text: #fff !default; // color of unselected language tab text
-$lang-select-active-text: #fff !default; // color of selected language tab text
-$lang-select-pressed-text: #fff !default; // color of language tab text when mouse is pressed
-
+$main-text:var(--main-text);
+$nav-text:var(--nav-text);
+$nav-active-text:var(--nav-active-text);
+$nav-active-parent-text:var(--nav-active-parent-text);
+$lang-select-text:var(--lang-select-text);
+$lang-select-active-text:var(--lang-select-active-text);
+$lang-select-pressed-text:var(--lang-select-pressed-text);
 
 // SIZES
 ////////////////////
@@ -63,15 +102,16 @@ $nav-v-padding: 10px !default; // padding used vertically around search boxes an
 $nav-indent: 10px !default; // extra padding for ToC subitems
 $code-annotation-padding: 13px !default; // padding inside code annotations
 $h1-margin-bottom: 21px !default; // padding under the largest header tags
-$tablet-width: 930px !default; // min width before reverting to tablet size
+$tablet-width: 1134px !default; // min width before reverting to tablet size
 $phone-width: $tablet-width - $nav-width !default; // min width before reverting to mobile size
 
 
 // FONTS
 ////////////////////
 %default-font {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.09rem;
 }
 
 %header-font {
@@ -80,17 +120,17 @@ $phone-width: $tablet-width - $nav-width !default; // min width before reverting
 }
 
 %code-font {
-  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace, serif;
+  font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono",
+    "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace,
+    serif;
   font-size: 12px;
   line-height: 1.5;
 }
 
-
 // OTHER
 ////////////////////
-$nav-footer-border-color: #666 !default;
-$search-box-border-color: #666 !default;
-
+$nav-footer-border-color: var(--nav-footer-border-color);
+$search-box-border-color: var(--search-box-border-color);
 
 ////////////////////////////////////////////////////////////////////////////////
 // INTERNAL
@@ -98,6 +138,6 @@ $search-box-border-color: #666 !default;
 // These settings are probably best left alone.
 
 %break-words {
-    word-break: break-all;
-    hyphens: auto;
+  word-break: break-all;
+  hyphens: auto;
 }

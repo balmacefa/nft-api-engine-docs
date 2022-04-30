@@ -1,0 +1,286 @@
+## Completed!! 🌈🥇📜💣💥
+
+```json
+{
+  "job": {
+    "data": {
+      "nftMintOrderEntity": {
+        "id": 20,
+        "sendAddress": "0xf2B5B9E978Ee841c2b1507a09Aa715D19F0D76fc",
+        "blockchain": "MATIC",
+        "collectionName": "collection_name",
+        "symbol": "NSL_NFT_SYMBOL",
+        "tokenId": "137",
+        "royalties": [
+          {
+            "address": "0x1837F49559fC820f28C1C239aDF53854dba570Ba",
+            "splitRoyaltyRate": 10
+          }
+        ],
+        "nftMetadata": {
+          "description": "See opensea standard - https://docs.opensea.io/docs/metadata-standards",
+          "external_url": "https://your_domain.xyz/nft/1",
+          "image": "This will be set by payload: uploadIpfsFiles[0].setMetadataPath",
+          "animation_url": "uploadIpfsFiles[1].setMetadataPath ??",
+          "name": "Name of the NFT -- see standards ^^",
+          "attributes": [
+            {
+              "trait_type": "Personality",
+              "value": "Go4It"
+            },
+            {
+              "display_type": "date",
+              "trait_type": "birthday",
+              "value": 1546360800
+            }
+          ],
+          "custom_data": {
+            "key": "You can set any property outside the marketplace standards"
+          }
+        },
+        "nftMetadataIPFS": "ipfs://Qma9zdmCq9uh7c8UshsuyKr28mKfWkvjQe1FpWPVzey6jP",
+        "transactionId": null,
+        "signatureId": null,
+        "contractAddress": null,
+        "status": "pending",
+        "user": "balmacefa",
+        "createdAt": "2022-04-21T21:46:12.124Z",
+        "updatedAt": "2022-04-21T21:46:36.682Z"
+      },
+      "tatum_use_test_net": true,
+      "nftContractAddress": {
+        "id": 6,
+        "symbol": "NSL_NFT_SYMBOL",
+        "blockchain": "MATIC",
+        "transactionId": "0xbd631a33d1e35d939fc196f0fbc3ce0788d513d58a3fee82557a0185dfebd2cd",
+        "signatureId": "6261d0a515522efe39154296",
+        "contractAddress": "0x62d76B3089B3Cb775A8ab3684B7D84B0F6CE914d",
+        "useTestNet": true,
+        "createdAt": "2022-04-21T21:46:12.175Z",
+        "updatedAt": "2022-04-21T21:46:32.275Z",
+        "publishedAt": "2022-04-21T21:46:12.169Z",
+        "user": "balmacefa",
+        "collectionName": "collection_name"
+      },
+      "nftMetadata": {
+        "description": "See opensea standard - https://docs.opensea.io/docs/metadata-standards",
+        "external_url": "https://your_domain.xyz/nft/1",
+        "image": "This will be set by payload: uploadIpfsFiles[0].setMetadataPath",
+        "animation_url": "uploadIpfsFiles[1].setMetadataPath ??",
+        "name": "Name of the NFT -- see standards ^^",
+        "attributes": [
+          {
+            "trait_type": "Personality",
+            "value": "Go4It"
+          },
+          {
+            "display_type": "date",
+            "trait_type": "birthday",
+            "value": 1546360800
+          }
+        ],
+        "custom_data": {
+          "key": "You can set any property outside the marketplace standards"
+        }
+      },
+      "nftMetadataUrl": "ipfs://Qma9zdmCq9uh7c8UshsuyKr28mKfWkvjQe1FpWPVzey6jP"
+    },
+    "opts": {
+      "attempts": 10,
+      "delay": 0,
+      "backoff": {
+        "delay": 1000,
+        "type": "fixed"
+      },
+      "jobId": "NSL_NFT_SYMBOL____137_cname"
+    },
+    "id": "NSL_NFT_SYMBOL____137_cname",
+    "progress": [
+      {
+        "topic": "INIT",
+        "msg": "NFT Job Started",
+        "timestamp": "2022-04-21T21:46:12.156Z"
+      },
+      {
+        "topic": "NFT_COLLECTION_CONTRACT",
+        "msg": "NFT contract: Not contract found!",
+        "timestamp": "2022-04-21T21:46:12.192Z"
+      },
+      {
+        "topic": "NFT_COLLECTION_CONTRACT",
+        "msg": "NFT contract: new Contract queued",
+        "timestamp": "2022-04-21T21:46:14.430Z"
+      },
+      {
+        "topic": "NFT_COLLECTION_CONTRACT",
+        "msg": "NFT contract: Waiting for blockchain signup and confirmation",
+        "timestamp": "2022-04-21T21:46:14.430Z",
+        "count": 2,
+        "updatedAt": "2022-04-21T21:46:21.108Z"
+      },
+      {
+        "topic": "NFT_COLLECTION_CONTRACT",
+        "msg": "NFT contract: Created",
+        "timestamp": "2022-04-21T21:46:28.816Z"
+      },
+      {
+        "topic": "NFT_COLLECTION_CONTRACT",
+        "msg": "NFT contract: Address -> [object Object]",
+        "data": {
+          "id": 6,
+          "symbol": "NSL_NFT_SYMBOL",
+          "blockchain": "MATIC",
+          "transactionId": "0xbd631a33d1e35d939fc196f0fbc3ce0788d513d58a3fee82557a0185dfebd2cd",
+          "signatureId": "6261d0a515522efe39154296",
+          "contractAddress": "0x62d76B3089B3Cb775A8ab3684B7D84B0F6CE914d",
+          "useTestNet": true,
+          "createdAt": "2022-04-21T21:46:12.175Z",
+          "updatedAt": "2022-04-21T21:46:32.275Z",
+          "publishedAt": "2022-04-21T21:46:12.169Z",
+          "user": "balmacefa",
+          "collectionName": "collection_name"
+        },
+        "timestamp": "2022-04-21T21:46:32.305Z"
+      },
+      {
+        "topic": "IPFS",
+        "msg": "Uploading to IPFS",
+        "timestamp": "2022-04-21T21:46:32.317Z"
+      },
+      {
+        "topic": "IPFS",
+        "msg": "Hash: QmVotqYfwe4w5qcnKRmsU8swfWFJmim8uJdwHWEHZau7TW Uploaded to IPFS",
+        "timestamp": "2022-04-21T21:46:34.596Z"
+      },
+      {
+        "topic": "IPFS",
+        "msg": "IPFS: Uploaded to IPFS",
+        "timestamp": "2022-04-21T21:46:34.597Z"
+      },
+      {
+        "msg": "NFT metadata: Building",
+        "timestamp": "2022-04-21T21:46:34.619Z"
+      },
+      {
+        "msg": "NFT metadata: Built",
+        "timestamp": "2022-04-21T21:46:34.620Z"
+      },
+      {
+        "msg": "NFT metadata: Uploading metadata to IPFS",
+        "timestamp": "2022-04-21T21:46:34.649Z"
+      },
+      {
+        "topic": "IPFS",
+        "msg": "Uploading to IPFS",
+        "timestamp": "2022-04-21T21:46:34.649Z"
+      },
+      {
+        "topic": "IPFS",
+        "msg": "Hash: Qma9zdmCq9uh7c8UshsuyKr28mKfWkvjQe1FpWPVzey6jP Uploaded to IPFS",
+        "timestamp": "2022-04-21T21:46:36.664Z"
+      },
+      {
+        "msg": "Mint NFT: Init",
+        "timestamp": "2022-04-21T21:46:36.718Z"
+      },
+      {
+        "msg": "Mint NFT: Queued",
+        "timestamp": "2022-04-21T21:46:39.282Z"
+      },
+      {
+        "msg": "Mint NFT: Waiting for blockchain confirmation",
+        "timestamp": "2022-04-21T21:46:39.282Z",
+        "count": 2,
+        "updatedAt": "2022-04-21T21:46:45.391Z"
+      },
+      {
+        "msg": "Mint NFT: NFT contract created",
+        "timestamp": "2022-04-21T21:46:46.656Z"
+      },
+      {
+        "msg": "Mint NFT: Address -> 0xe1acb32735b1bc9bf764fa2cd3a64727664166eb17b9161632b79fc9f5c09380",
+        "data": "0xe1acb32735b1bc9bf764fa2cd3a64727664166eb17b9161632b79fc9f5c09380",
+        "timestamp": "2022-04-21T21:46:46.656Z"
+      }
+    ],
+    "stacktrace": [],
+    "attemptsMade": 1,
+    "timestamp": 1650577572143,
+    "processedOn": 1650577572153
+  },
+  "workerValue": {
+    "id": 20,
+    "sendAddress": "0xf2B5B9E978Ee841c2b1507a09Aa715D19F0D76fc",
+    "blockchain": "MATIC",
+    "collectionName": "collection_name",
+    "symbol": "NSL_NFT_SYMBOL",
+    "tokenId": "10",
+    "royalties": [
+      {
+        "address": "0x1837F49559fC820f28C1C239aDF53854dba570Ba",
+        "splitRoyaltyRate": 10
+      }
+    ],
+    "rapidApiRequestHeaders": {},
+    "nftMetadata": {
+      "description": "See opensea standard - https://docs.opensea.io/docs/metadata-standards",
+      "external_url": "https://your_domain.xyz/nft/1",
+      "image": "This will be set by payload: uploadIpfsFiles[0].setMetadataPath",
+      "animation_url": "uploadIpfsFiles[1].setMetadataPath ??",
+      "name": "Name of the NFT -- see standards ^^",
+      "attributes": [
+        {
+          "trait_type": "Personality",
+          "value": "Go4It"
+        },
+        {
+          "display_type": "date",
+          "trait_type": "birthday",
+          "value": 1546360800
+        }
+      ],
+      "custom_data": {
+        "key": "You can set any property outside the marketplace standards"
+      }
+    },
+    "nftMetadataIPFS": "ipfs://Qma9zdmCq9uh7c8UshsuyKr28mKfWkvjQe1FpWPVzey6jP",
+    "transactionId": "0xe1acb32735b1bc9bf764fa2cd3a64727664166eb17b9161632b79fc9f5c09380",
+    "signatureId": "6261d0be83273adc991df1ed",
+    "contractAddress": "0x62d76B3089B3Cb775A8ab3684B7D84B0F6CE914d",
+    "status": "minted",
+    "user": "balmacefa",
+    "createdAt": "2022-04-21T21:46:12.124Z",
+    "updatedAt": "2022-04-21T21:46:46.621Z"
+  },
+  "topic": "completed"
+}
+
+
+```
+This is triggered when the NFT is successfully minted.
+
+
+
+### Description of the payload
+
+The payload is a JSON object with the following properties:
+
+| Name | Description |
+| ---- | ----------- |
+`workerValue` | The value of the job-queue stage events related to the topic. |
+`topic` | The topic [ completed | progress | failed | unrecoverableFatalError ] |
+`job` | The job that is being processed. |
+`job.data` | The data used to process the job and events |
+`job.data.id` | This identifies the job in the queue. |
+`job.opts` | The queue options configuration used to process the job |
+`job.id` | This identifies the job in the queue. |
+`job.progress` | The progress of the job |
+`job.progress.stacktrace` | The stacktrace of the job in case of errors |
+`job.progress.attemptsMade` | The number of attempts made to process the job, max value of 10 times |
+`job.progress.timestamp` | The timestamp of the job |
+`job.progress.processedOn` | The timestamp last step update|
+
+
+
+
+
