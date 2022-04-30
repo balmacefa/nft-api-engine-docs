@@ -22,6 +22,7 @@ search: true
 code_clipboard: true
 
 meta:
+  - host: https://balmacefa.github.io/nft-api-engine-docs/#introduction
   - name: description
-    content: Documentation for the Kittn API
+    content: Documentation hosted on GitHub Pages.
 ---

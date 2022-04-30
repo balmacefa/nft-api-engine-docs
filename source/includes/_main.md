@@ -339,3 +339,11 @@ Please review the JSON Schema for this endpoint.
           <p>
           _The upload result will be set to JSON NFT Metadata obj, specify by this Path, which is done internally by  [lodash _.set](https://lodash.com/docs/4.17.15#set)_
           </p>
+
+
+### Alternative business uses 🤔⛑
+
+Emit a NFT Mint Order to the blockchain. This will mint a new NFT to the blockchain. 
+You can use this API to emit digital 
+
+WIP https://identityreview.com/10-nft-future-use-cases/
