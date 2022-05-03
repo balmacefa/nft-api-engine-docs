@@ -1,4 +1,4 @@
-## Galactic 🏰🌈:
+# Galactic 🏰🌈:
 
 Galactic cases are the most important part of the game. Future galactic cases will be created by the Galactic NFT API Engine.
 
