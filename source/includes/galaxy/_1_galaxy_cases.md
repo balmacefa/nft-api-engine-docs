@@ -22,3 +22,8 @@ Use the following instances as case studies:
 
 - NFTs are becoming prime uses for identities in the form of avatars. Much like passports connect individuals to a country, avatars represent memberships in communities.
 
+- Air drop NFts
+- No knowledge required
+- Address splitter periodical or stream of NFTs with crypto revenue.
+- Save Historical events, agreement, contract of video game
+- NFTs can be used to represent ownership of digital goods like art, music, or videos, as well as any JSON structure.
