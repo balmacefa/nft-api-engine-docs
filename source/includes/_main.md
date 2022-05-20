@@ -31,8 +31,8 @@ The nature of the networks and technology used to create non-fungible tokens (NF
   "nftMintOrder": {
     "sendAddress": "0xf2B5B9E978Ee841c2b1507a09Aa715D19F0D76fc",
     "blockchain": "MATIC",
-    "tokenId": "13",
-    "collectionName": "collection__012",
+    "tokenId": "1",
+    "collectionName": "collection__01",
     "symbol": "SYMBOL_01",
     "royalties": [
       {
