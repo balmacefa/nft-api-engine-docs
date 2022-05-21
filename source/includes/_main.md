@@ -24,6 +24,7 @@ The nature of the networks and technology used to create non-fungible tokens (NF
 
 # Create NFT 🌈📜
 
+> POST /createNFT --
 > The above is a payload Example:
 
 ```json
@@ -217,6 +218,9 @@ The nature of the networks and technology used to create non-fungible tokens (NF
 
 ```
 
+<aside class="notice">
+POST /createNFT
+</aside>
 
 Use this endpoint to deploy and NFT.
 This is a fully automated solution 🤖🧞 that allows you to deploy an NFT with a single API call to the [Polygon Matic](https://polygon.technology/) blockchain ( this is a layer 2 Ethereum network). Other blockchains will be added in the future ( BSC, CELO, ONE).

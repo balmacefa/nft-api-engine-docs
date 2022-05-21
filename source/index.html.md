@@ -16,10 +16,14 @@ includes:
   - webhooks/progress
   - webhooks/failed
   - webhooks/unrecoverableFatalError
-  - galaxy/_1_galaxy_cases
-  - galaxy/_2_magical_caracol_ai
-  - galaxy/_3_galaxy_cards
-  - galaxy/_4_galaxy_cards
+  - queries/NFT_Orders/getNFTOrder
+  - queries/NFT_Orders/listNFTOrders
+  - queries/Contract/getContract
+  - queries/Contract/listContract
+  # - galaxy/_1_galaxy_cases
+  # - galaxy/_2_magical_caracol_ai
+  # - galaxy/_3_galaxy_cards
+  # - galaxy/_4_galaxy_cards
 
 search: true
 
