@@ -321,7 +321,10 @@
               </ul>
           </li>
           <li>
-            <a href="#create-nft" class="toc-h1 toc-link" data-title="Create NFT 🌈📜">Create NFT 🌈📜</a>
+            <a href="#post-claim-collection-contracts" class="toc-h1 toc-link" data-title="POST Claim Collection Contracts">POST Claim Collection Contracts</a>
+          </li>
+          <li>
+            <a href="#post-create-nft" class="toc-h1 toc-link" data-title="POST Create NFT 🌈📜">POST Create NFT 🌈📜</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#payload-properties" class="toc-h2 toc-link" data-title="Payload Properties 💣💥">Payload Properties 💣💥</a>
@@ -349,10 +352,10 @@
               </ul>
           </li>
           <li>
-            <a href="#get-find-nft-order" class="toc-h1 toc-link" data-title="Get / Find NFT Order 🕵📄🐝🍯">Get / Find NFT Order 🕵📄🐝🍯</a>
+            <a href="#get-find-nft-order" class="toc-h1 toc-link" data-title="GET / Find NFT Order 🕵📄🐝🍯">GET / Find NFT Order 🕵📄🐝🍯</a>
           </li>
           <li>
-            <a href="#list-nft-orders" class="toc-h1 toc-link" data-title="List NFT Orders 📜📄">List NFT Orders 📜📄</a>
+            <a href="#get-list-nft-orders" class="toc-h1 toc-link" data-title="GET List NFT Orders 📜📄">GET List NFT Orders 📜📄</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#description-of-query-params" class="toc-h2 toc-link" data-title="Description of query params">Description of query params</a>
@@ -360,10 +363,10 @@
               </ul>
           </li>
           <li>
-            <a href="#get-find-collection-contract" class="toc-h1 toc-link" data-title="Get / Find Collection Contract 🕵🏦🏪">Get / Find Collection Contract 🕵🏦🏪</a>
+            <a href="#get-find-collection-contract" class="toc-h1 toc-link" data-title="GET / Find Collection Contract 🕵🏦🏪">GET / Find Collection Contract 🕵🏦🏪</a>
           </li>
           <li>
-            <a href="#list-collection-contracts" class="toc-h1 toc-link" data-title="List Collection Contracts 🕌📰">List Collection Contracts 🕌📰</a>
+            <a href="#get-list-collection-contracts" class="toc-h1 toc-link" data-title="GET List Collection Contracts 🕌📰">GET List Collection Contracts 🕌📰</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#description-of-query-params" class="toc-h2 toc-link" data-title="Description of query params">Description of query params</a>
@@ -391,10 +394,42 @@
 </ul>
 <h3 id='the-job-queue'>The Job queue 💀🥀🧲🧭</h3>
 <p>The nature of the networks and technology used to create non-fungible tokens (NFTs) means that there are multiple potential points of failure. To account for this, a resilience work queue is used that attempts each step until the NFT is successfully deployed. If a job does not succeed after 10 tries, it is considered unrecoverable.</p>
-<h1 id='create-nft'>Create NFT 🌈📜</h1>
+<h1 id='post-claim-collection-contracts'>POST Claim Collection Contracts</h1>
 <blockquote>
-<p>POST /createNFT --
-The above is a payload Example:</p>
+<p>POST /contract_claims/{testnet || mainnet}/{blockchain:MATIC}</p>
+
+<p>The above is a response Example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"balmacefa"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-20T07:19:00.690Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-21T16:49:22.986Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"blockchain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MATIC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"useTestNet"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"remainClaims"</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<aside class="notice">
+POST /contract_claims/{testnet || mainnet}/{blockchain:MATIC}
+</aside>
+
+<p>Use this endpoint to claim a collection contract. This depends on your plan.
+This endpoint will return the remaining claims to create a new collection contract. </p>
+
+<p>Please keep in mind that useTestNet refers to either the testnet or the mainnet.</p>
+
+<aside class="warning">
+</aside>
+
+<p>🛑You must first call this endpoint before <a href="#post-create-nft">Create a new NFT</a>🛑
+<aside class="warning">
+</aside></p>
+<h1 id='post-create-nft'>POST Create NFT 🌈📜</h1>
+<blockquote>
+<p>POST /createNFT</p>
+
+<p>The above is a payload Example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"nftMintOrder"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -596,8 +631,12 @@ This is a fully automated solution 🤖🧞 that allows you to deploy an NFT wit
 Please review the JSON Schema for this endpoint.
 </aside>
 
-<p>
-</p>
+<aside class="warning">
+</aside>
+
+<p>🛑To use this endpoint, you must first <a href="#post-claim-collection-contracts">claim Collection Contracts</a>🛑
+<aside class="warning">
+</aside></p>
 <h3 id='payload-properties'>Payload Properties 💣💥</h3>
 <ul>
 <li><p><b id="#/properties/nftMintOrder">🔸 nftMintOrder</b> Type: <code>object</code> | <code>⛑ required</code>
@@ -1215,10 +1254,11 @@ This will change in futures updates and Auth system will be add it.
 
 </span></code></pre></div>
 <p>This is triggered when a job fails many times and will not be retried; the job is then removed from the queue stack</p>
-<h1 id='get-find-nft-order'>Get / Find NFT Order 🕵📄🐝🍯</h1>
+<h1 id='get-find-nft-order'>GET / Find NFT Order 🕵📄🐝🍯</h1>
 <blockquote>
-<p>GET /NFT_orders/{id || transactionId}
-The above is a response Example:</p>
+<p>GET /NFT_orders/{id || transactionId}</p>
+
+<p>The above is a response Example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"sendAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xf2b5b9e978ee841c2b1507a09aa715d19f0d76fc"</span><span class="p">,</span><span class="w">
@@ -1293,10 +1333,11 @@ Use this value to scan and verify the transaction.
 <p>Example for MATIC Mumbai Testnet:
 <code>transactionId</code> : 0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a
 <a href="https://mumbai.polygonscan.com/tx/0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a">Polygon scan https://mumbai.polygonscan.com/tx/{transactionId}</a></p>
-<h1 id='list-nft-orders'>List NFT Orders 📜📄</h1>
+<h1 id='get-list-nft-orders'>GET List NFT Orders 📜📄</h1>
 <blockquote>
-<p>GET /NFT_orders?{queryParams}
-The above is a response Example:</p>
+<p>GET /NFT_orders?{queryParams}</p>
+
+<p>The above is a response Example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
    </span><span class="nl">"data"</span><span class="p">:[</span><span class="w">
@@ -1412,10 +1453,11 @@ Use this value to scan and verify the transaction.
 <td>The number of results per page. max: 100</td>
 </tr>
 </tbody></table>
-<h1 id='get-find-collection-contract'>Get / Find Collection Contract 🕵🏦🏪</h1>
+<h1 id='get-find-collection-contract'>GET / Find Collection Contract 🕵🏦🏪</h1>
 <blockquote>
-<p>GET /NFT_contracts/{id || transactionId}
-The above is a response Example:</p>
+<p>GET /NFT_contracts/{id || transactionId}</p>
+
+<p>The above is a response Example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYMBOL_0211"</span><span class="p">,</span><span class="w">
@@ -1453,10 +1495,11 @@ Use this value to scan and verify the transaction.
 <p>Example for MATIC Mumbai Testnet:
 <code>transactionId</code> : 0x070d9C506CF0cf31916F0586b76b94ce64478E81
 <a href="https://mumbai.polygonscan.com/tx/0x070d9C506CF0cf31916F0586b76b94ce64478E81">Polygon scan https://mumbai.polygonscan.com/tx/{transactionId}</a></p>
-<h1 id='list-collection-contracts'>List Collection Contracts 🕌📰</h1>
+<h1 id='get-list-collection-contracts'>GET List Collection Contracts 🕌📰</h1>
 <blockquote>
-<p>GET /NFT_contracts?{queryParams}
-The above is a response Example:</p>
+<p>GET /NFT_contracts?{queryParams}</p>
+
+<p>The above is a response Example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
     </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
