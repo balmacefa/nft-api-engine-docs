@@ -349,41 +349,24 @@
               </ul>
           </li>
           <li>
-            <a href="#galactic" class="toc-h1 toc-link" data-title="Galactic 🏰🌈:">Galactic 🏰🌈:</a>
+            <a href="#get-find-nft-order" class="toc-h1 toc-link" data-title="Get / Find NFT Order 🕵📄🐝🍯">Get / Find NFT Order 🕵📄🐝🍯</a>
+          </li>
+          <li>
+            <a href="#list-nft-orders" class="toc-h1 toc-link" data-title="List NFT Orders 📜📄">List NFT Orders 📜📄</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#ages-of-the-galactic-nfts" class="toc-h2 toc-link" data-title="Ages of the Galactic NFTs">Ages of the Galactic NFTs</a>
-                  </li>
-                  <li>
-                    <a href="#business-uses" class="toc-h2 toc-link" data-title="Business uses">Business uses</a>
+                    <a href="#description-of-query-params" class="toc-h2 toc-link" data-title="Description of query params">Description of query params</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#uses" class="toc-h1 toc-link" data-title="uses:">uses:</a>
+            <a href="#get-find-collection-contract" class="toc-h1 toc-link" data-title="Get / Find Collection Contract 🕵🏦🏪">Get / Find Collection Contract 🕵🏦🏪</a>
           </li>
           <li>
-            <a href="#this-is-what-the-magical-caracol_ai-looks-like" class="toc-h1 toc-link" data-title="This is what the magical caracol_ai looks like:">This is what the magical caracol_ai looks like:</a>
+            <a href="#list-collection-contracts" class="toc-h1 toc-link" data-title="List Collection Contracts 🕌📰">List Collection Contracts 🕌📰</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#how-can-nfts-be-used" class="toc-h2 toc-link" data-title="How can NFTs be used?">How can NFTs be used?</a>
-                  </li>
-                  <li>
-                    <a href="#consider-the-json-structure" class="toc-h2 toc-link" data-title="Consider the JSON structure :">Consider the JSON structure :</a>
-                  </li>
-                  <li>
-                    <a href="#write-the-history-of-the-progress_proof-json-in-a-video-game" class="toc-h2 toc-link" data-title="Write the history of the progress_proof json in a video game:">Write the history of the progress_proof json in a video game:</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#features" class="toc-h1 toc-link" data-title="Features 💡🍻🦄👑">Features 💡🍻🦄👑</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#why-this-is-the-next-big-thing" class="toc-h2 toc-link" data-title="Why this is the next big thing?">Why this is the next big thing?</a>
-                  </li>
-                  <li>
-                    <a href="#example" class="toc-h2 toc-link" data-title="Example:">Example:</a>
+                    <a href="#description-of-query-params" class="toc-h2 toc-link" data-title="Description of query params">Description of query params</a>
                   </li>
               </ul>
           </li>
@@ -410,7 +393,8 @@
 <p>The nature of the networks and technology used to create non-fungible tokens (NFTs) means that there are multiple potential points of failure. To account for this, a resilience work queue is used that attempts each step until the NFT is successfully deployed. If a job does not succeed after 10 tries, it is considered unrecoverable.</p>
 <h1 id='create-nft'>Create NFT 🌈📜</h1>
 <blockquote>
-<p>The above is a payload Example:</p>
+<p>POST /createNFT --
+The above is a payload Example:</p>
 </blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"nftMintOrder"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
@@ -601,6 +585,10 @@
 </span><span class="p">}</span><span class="w">
 
 </span></code></pre></div>
+<aside class="notice">
+POST /createNFT
+</aside>
+
 <p>Use this endpoint to deploy and NFT.
 This is a fully automated solution 🤖🧞 that allows you to deploy an NFT with a single API call to the <a href="https://polygon.technology/">Polygon Matic</a> blockchain ( this is a layer 2 Ethereum network). Other blockchains will be added in the future ( BSC, CELO, ONE).</p>
 
@@ -1227,207 +1215,329 @@ This will change in futures updates and Auth system will be add it.
 
 </span></code></pre></div>
 <p>This is triggered when a job fails many times and will not be retried; the job is then removed from the queue stack</p>
-<h1 id='galactic'>Galactic 🏰🌈:</h1>
-<p>Galactic cases are the most important part of the game. Future galactic cases will be created by the Galactic NFT API Engine.</p>
-<h3 id='ages-of-the-galactic-nfts'>Ages of the Galactic NFTs</h3>
-<ul>
-<li>[x] Stone 🦕🏰</li>
-<li>[] Bronze 🌹🍒</li>
-<li>[] goldcrest -----&gt;&gt;</li>
-</ul>
-<h2 id='business-uses'>Business uses</h2>
-<p>You have complete control over your internal economy, and you may choose to use the blockchain to deploy your NFT.</p>
-
-<ul>
-<li>Location-Based NFTs: Location-based NFTs can be utilized to provide exclusive benefits and access to experiences in the physical and digital worlds to visitors of certain areas.
-Use the following instances as case studies:</li>
-<li>A museum that provides museum permits to visitors, which can be utilized to provide personalized NFT and physical access to sub-galleries or sub-experiences.</li>
-</ul>
-<h1 id='uses'>uses:</h1>
-<ul>
-<li><p>The goldcrest will be opening up the 🔥💡 official blockchain API/gRpc hub  in the former NFT, proof of progress DAO structure, Cupola_XS137. The hub aims to help speed up the adoption of blockchain technology and improve the climate for NFT &lt;&lt;-..^-^. The hub will be working, processing decentralized code processing &amp;&amp;_AND innovation to help support blockchain technology 33_6TY!!.</p></li>
-<li><p>NFTs can be used to represent real-world assets, like a house or a piece of land. The benefit of using an NFT to represent these assets is that they can be easily traded or sold online without the need for a middleman, like a bank or a real estate agent. NFTs can also be used to represent virtual assets, like a digital painting or a piece of music. The benefit of using an NFT to represent these assets is that they can be easily traded or sold online without the need for a middleman, like a record label or an art gallery.</p></li>
-<li><p>NFTs are becoming prime uses for identities in the form of avatars. Much like passports connect individuals to a country, avatars represent memberships in communities.</p></li>
-<li><p>Air drop NFts</p></li>
-<li><p>No knowledge required</p></li>
-<li><p>Address splitter periodical or stream of NFTs with crypto revenue.</p></li>
-<li><p>Save Historical events, agreement, contract of video game</p></li>
-<li><p>NFTs can be used to represent ownership of digital goods like art, music, or videos, as well as any JSON structure.</p></li>
-</ul>
-<h1 id='this-is-what-the-magical-caracol_ai-looks-like'>This is what the magical caracol_ai looks like:</h1>
-
-<p>🐋👽🏰📐🏩🍎📘🕌💐
-This is written with the help of 3 amazing people entities:</p>
-
-<p>NFTs or non-fungible tokens are digital assets that are unique and cannot be replaced. They are often used to represent items in video games or digital art. Recently, there has been a lot of interest in NFTs as their prices have skyrocketed. For example, an NFT of a digital cat sold for over $100,000!</p>
-
-<p>This NFT API Engine is a platform that allows developers to create and manage NFTs. It is easy to use and only requires one API call! This makes it perfect for developers who want to create NFTs but don&#39;t have the time or expertise to do so.</p>
-
-<h3 id='how-can-nfts-be-used'>How can NFTs be used?</h3>
-
-<p>NFTs could be employed for a range of applications. They can, for example, be used to signify ownership of digital goods like art, music, or videos, as well as any JSON structure. They can also be used to represent tangible items like automobiles and houses. NFTs can also be used to represent shares in a firm or cryptocurrency tokens.</p>
-
-<h3 id='consider-the-json-structure'>Consider the JSON structure :</h3>
-
-<p>add characteristics to the NFT JSON format, such as: - proof of progress</p>
-
-<p>Progress proof allows you to determine whether or not a person makes any progress in your architecture; it may also be employed as a role-playing game in which the player&#39;s decisions influence the future of life.</p>
-
-<h3 id='write-the-history-of-the-progress_proof-json-in-a-video-game'>Write the history of the progress_proof json in a video game:</h3>
-
-<p>The progress_proof json is used in the video game &quot;NFT API Engine.&quot; Players in this game have the option of joining the game&#39;s development team or simply playing the game. The game is set  and is determined by the choices made by the entire universe of players.
-Each significant game decision is saved as a historical record chain in your JSON structure, which can be as rich or as simple as you wish.</p>
-
-<p>The progress_proof json is used to keep track of players&#39; decisions and to decide the game&#39;s outcome. As a result, you may have a totally unique and dynamic gaming experience over time.</p>
-
-<h1 id='features'>Features 💡🍻🦄👑</h1>
-
-<ul>
-<li>NFT API Engine: NFT Creation and Management Platform</li>
-</ul>
-
-<p>The NFT API Engine is a platform for creating and managing NFTs for developers.</p>
-
-<ul>
-<li><p>NFT API Engine: Simple and User-Friendly
-It&#39;s simple to use, requiring only one API request!</p></li>
-<li><p>NFT API Engine: Ideal for Developers Looking to Create NFTs
-As a result, it&#39;s ideal for developers who want to make NFTs but don&#39;t have the time or know-how.</p></li>
-<li><p>NFTs could be utilized to represent ownership of digital assets, company shares, or cryptocurrency tokens , among other things.
-This is base on the Json structure metadata and you print this to the blockchain if up to up, an history narrative of data.</p></li>
-</ul>
-
-<p>register a comunite actions to train 
-dataset 
-in nft
-open source or encrypted
-data source decentralized^^</p>
-
-<p>sale your own open source grpc / http autogenerate (̅<em>̅</em>̅<em>̅(̅</em>̅<em>̅</em>̅<em>̅</em>̅<em>̅</em>̅<em>̅̅</em>̅()ڪے~</p>
-<p>NFTs are becoming prime uses for identities in the form of avatars. Much like passports connect individuals to a country, avatars represent memberships in communities.</p>
-
-<ul>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>ownership of digital assets such as art, music, or videos.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>physical assets such as cars or houses.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>shares in a company or tokens in a cryptocurrency.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>membership in a club or group.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>tickets to an event.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>loyalty points.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>rewards points.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>coupons.</li>
-</ul></li>
-<li> ~<del>占</del>~~🌅🌇
-
-<ul>
-<li>gift cards.
-1-  ~<del>占</del>~~🌅🌇</li>
-<li>anything that is unique and cannot be replaced.</li>
-</ul></li>
-</ul>
-
-<p>List business idea using this API:</p>
-
-<ul>
-<li><p>One business idea is to create an online marketplace that allows people to buy and sell NFTs. This marketplace could be used to sell digital assets such as art, music, or videos. Alternatively, it could be used to sell physical assets such as cars or houses. Another idea is to create a platform that allows people to trade NFTs. This platform could be used to trade shares in a company or tokens in a cryptocurrency.</p></li>
-<li><p>club or group that uses NFTs as membership cards. This club could be used to access exclusive content or events. Additionally, this club could offer discounts or loyalty points to members.</p></li>
-<li><p>A loyalty program that uses NFTs as reward points. This loyalty program could be used by businesses to reward customers for their loyalty. Additionally, this loyalty program could be used by individuals to track their progress towards a goal.</p></li>
-<li><p>A platform that allows people to bet on the outcomes of events. This platform could be used to bet on the outcomes of sporting events, political elections, or reality TV shows.</p></li>
-<li><p>A game that uses NFTs as in-game items. This game could be an online game or a physical board game. Alternatively, this game could be a mobile app.</p></li>
-</ul>
-<h3 id='why-this-is-the-next-big-thing'>Why this is the next big thing?</h3>
-<p>NFTs are the next big thing because they have the potential to revolutionize the way we own and trade digital assets. Additionally, NFTs have the potential to change the way we interact with loyalty programs, clubs, and groups.</p>
+<h1 id='get-find-nft-order'>Get / Find NFT Order 🕵📄🐝🍯</h1>
+<blockquote>
+<p>GET /NFT_orders/{id || transactionId}
+The above is a response Example:</p>
+</blockquote>
 <div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This a decision made by the consultant"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"external_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://your_domain.xyz/nft/display_history/"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This will be set by payload: uploadIpfsFiles[0].setMetadataPath"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"animation_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uploadIpfsFiles[1].setMetadataPath"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Name of the decision - Rutendort 4583_cvm"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"custom_data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-      </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"You can set any property outside the marketplace standards_ this data is utf8 encoded and saved in the ifpf"</span><span class="p">,</span><span class="w">
-      </span><span class="nl">"╰⋃╯..╰⋃╯.._▀̿ ̿Ĺ̯̿̿▀̿ ̿) "</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="nl">"sendAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xf2b5b9e978ee841c2b1507a09aa715d19f0d76fc"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"blockchain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MATIC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"collectionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Prosperity_symbols"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ProsperSymbol"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"tokenId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"royalties"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
         </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Positional_thrust"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0.5"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"trs/%%666990²"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This person agreed that the decision was made by the consultant ^7fd^_ "</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Positional thrust"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"contract_type"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"request proof of progress"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_unit"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"initial_look_price_value_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"137c_369"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100k"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"impact_future_impact"</span><span class="p">:</span><span class="w"> </span><span class="s2">"30x price impact"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"frequency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3 times per year"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"reports_amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"display_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"birthday"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">1546360800</span><span class="w">
+            </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1837F49559fC820f28C1C239aDF53854dba570Ba"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"splitRoyaltyRate"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
         </span><span class="p">}</span><span class="w">
-      </span><span class="p">],</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"rapidApiRequestHeaders"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w">
+    </span><span class="nl">"nftMetadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Jin Chan is a mythical creature that is said to appear during the full moon, near houses or businesses that will soon receive good news. Most of the time, the nature of this good news is understood to be wealth-related.  According to feng shui beliefs, Jin Chan helps attract and protect wealth, and guards against bad luck."</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipfs://QmNxndGHmVnj31ikQxaFEdBEPQgLnuR1ANYuJtE5DFrMhM"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Jin Chan"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Species"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Toad"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Ability"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Attracts and protects wealth, and guards against bad luck"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Weakness"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Should never be kept in the bathroom, bedroom, dining room or kitchen"</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"display_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"birthday"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">1546360800</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"custom_data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"wikepedia"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://en.wikipedia.org/wiki/Jin_Chan"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"nftMetadataIPFS"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ipfs://QmeFZNfD8NMLoDPteiqw7pyNCyriUzSgHaygEkZgak4TMj"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"transactionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"signatureId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"628746854f1b6fc2e332a761"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contractAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xc40796eCB9583F9dce4fF292408d60FAFBa6e16E"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minted"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"balmacefa"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-20T07:24:47.678Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-21T01:49:05.355Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"useTestNet"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">41</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<aside class="notice">
+GET /NFT_orders/{id || transactionId}
+</aside>
+
+<p>This is endpoint get NFT order.</p>
+
+<p>You can use the internal id or transaction id to get NFT order.
+The above will return the same result for:</p>
+
+<p>/NFT_orders/41</p>
+
+<p>/NFT_orders/ 0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a</p>
+
+<aside class="warning">
+Please consider that `transactionId` is the unique identifier of the NFT in the blockchain.
+Use this value to scan and verify the transaction.
+</aside>
+
+<p>Example for MATIC Mumbai Testnet:
+<code>transactionId</code> : 0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a
+<a href="https://mumbai.polygonscan.com/tx/0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a">Polygon scan https://mumbai.polygonscan.com/tx/{transactionId}</a></p>
+<h1 id='list-nft-orders'>List NFT Orders 📜📄</h1>
+<blockquote>
+<p>GET /NFT_orders?{queryParams}
+The above is a response Example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+   </span><span class="nl">"data"</span><span class="p">:[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+         </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">41</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"attributes"</span><span class="p">:{</span><span class="w">
+            </span><span class="nl">"sendAddress"</span><span class="p">:</span><span class="s2">"0xf2b5b9e978ee841c2b1507a09aa715d19f0d76fc"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"blockchain"</span><span class="p">:</span><span class="s2">"MATIC"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"collectionName"</span><span class="p">:</span><span class="s2">"Prosperity_symbols"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"symbol"</span><span class="p">:</span><span class="s2">"ProsperSymbol"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"tokenId"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"royalties"</span><span class="p">:[</span><span class="w">
+               </span><span class="p">{</span><span class="w">
+                  </span><span class="nl">"address"</span><span class="p">:</span><span class="s2">"0x1837F49559fC820f28C1C239aDF53854dba570Ba"</span><span class="p">,</span><span class="w">
+                  </span><span class="nl">"splitRoyaltyRate"</span><span class="p">:</span><span class="mi">10</span><span class="w">
+               </span><span class="p">}</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nl">"rapidApiRequestHeaders"</span><span class="p">:{</span><span class="w">
+
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"nftMetadata"</span><span class="p">:{</span><span class="w">
+               </span><span class="nl">"description"</span><span class="p">:</span><span class="s2">"The Jin Chan is a mythical creature that is said to appear during the full moon, near houses or businesses that will soon receive good news. Most of the time, the nature of this good news is understood to be wealth-related.  According to feng shui beliefs, Jin Chan helps attract and protect wealth, and guards against bad luck."</span><span class="p">,</span><span class="w">
+               </span><span class="nl">"image"</span><span class="p">:</span><span class="s2">"ipfs://QmNxndGHmVnj31ikQxaFEdBEPQgLnuR1ANYuJtE5DFrMhM"</span><span class="p">,</span><span class="w">
+               </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"Jin Chan"</span><span class="p">,</span><span class="w">
+               </span><span class="nl">"attributes"</span><span class="p">:[</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                     </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="s2">"Species"</span><span class="p">,</span><span class="w">
+                     </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"Toad"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                     </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="s2">"Ability"</span><span class="p">,</span><span class="w">
+                     </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"Attracts and protects wealth, and guards against bad luck"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                     </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="s2">"Weakness"</span><span class="p">,</span><span class="w">
+                     </span><span class="nl">"value"</span><span class="p">:</span><span class="s2">"Should never be kept in the bathroom, bedroom, dining room or kitchen"</span><span class="w">
+                  </span><span class="p">},</span><span class="w">
+                  </span><span class="p">{</span><span class="w">
+                     </span><span class="nl">"display_type"</span><span class="p">:</span><span class="s2">"date"</span><span class="p">,</span><span class="w">
+                     </span><span class="nl">"trait_type"</span><span class="p">:</span><span class="s2">"birthday"</span><span class="p">,</span><span class="w">
+                     </span><span class="nl">"value"</span><span class="p">:</span><span class="mi">1546360800</span><span class="w">
+                  </span><span class="p">}</span><span class="w">
+               </span><span class="p">],</span><span class="w">
+               </span><span class="nl">"custom_data"</span><span class="p">:{</span><span class="w">
+                  </span><span class="nl">"wikepedia"</span><span class="p">:</span><span class="s2">"https://en.wikipedia.org/wiki/Jin_Chan"</span><span class="w">
+               </span><span class="p">}</span><span class="w">
+            </span><span class="p">},</span><span class="w">
+            </span><span class="nl">"nftMetadataIPFS"</span><span class="p">:</span><span class="s2">"ipfs://QmeFZNfD8NMLoDPteiqw7pyNCyriUzSgHaygEkZgak4TMj"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"transactionId"</span><span class="p">:</span><span class="s2">"0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"signatureId"</span><span class="p">:</span><span class="s2">"628746854f1b6fc2e332a761"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"contractAddress"</span><span class="p">:</span><span class="s2">"0xc40796eCB9583F9dce4fF292408d60FAFBa6e16E"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"status"</span><span class="p">:</span><span class="s2">"minted"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"user"</span><span class="p">:</span><span class="s2">"balmacefa"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"createdAt"</span><span class="p">:</span><span class="s2">"2022-05-20T07:24:47.678Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"updatedAt"</span><span class="p">:</span><span class="s2">"2022-05-21T01:49:05.355Z"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"useTestNet"</span><span class="p">:</span><span class="kc">true</span><span class="w">
+         </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+   </span><span class="p">],</span><span class="w">
+   </span><span class="nl">"meta"</span><span class="p">:{</span><span class="w">
+      </span><span class="nl">"pagination"</span><span class="p">:{</span><span class="w">
+         </span><span class="nl">"page"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"pageSize"</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"pageCount"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
+         </span><span class="nl">"total"</span><span class="p">:</span><span class="mi">3</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+   </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<aside class="notice">
+GET /NFT_orders?{queryParams}
+</aside>
+
+<p>This is endpoint list all NFT orders.
+You can use query params to filter the results.</p>
+
+<aside class="warning">
+Please consider that `transactionId` is the unique identifier of the NFT in the blockchain.
+Use this value to scan and verify the transaction.
+</aside>
+
+<p>Example for MATIC Mumbai Testnet:
+<code>transactionId</code> : 0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a
+<a href="https://mumbai.polygonscan.com/tx/0xc9ebb4936de7fb986123336d1034c0e452ae0baa6913947f503ece55c986114a">Polygon scan https://mumbai.polygonscan.com/tx/{transactionId}</a></p>
+<h3 id='description-of-query-params'>Description of query params</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>contractAddress</code></td>
+<td>The address of the contract that issued the NFT.</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>The status of the order in the job-queue [ pending / minted / failed ]</td>
+</tr>
+<tr>
+<td><code>network</code></td>
+<td>The network of the order [ mainnet / testnet ]</td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td>The page number of the results.</td>
+</tr>
+<tr>
+<td><code>pageSize</code></td>
+<td>The number of results per page. max: 100</td>
+</tr>
+</tbody></table>
+<h1 id='get-find-collection-contract'>Get / Find Collection Contract 🕵🏦🏪</h1>
+<blockquote>
+<p>GET /NFT_contracts/{id || transactionId}
+The above is a response Example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SYMBOL_0211"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"blockchain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MATIC"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"transactionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1daf508bc81fbdb26a8713e00295928a2faf4db4dbc1ddff8e0aebea701ad676"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"signatureId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6267110dbaca2e7ab8678b03"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"contractAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x070d9C506CF0cf31916F0586b76b94ce64478E81"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"useTestNet"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-04-25T21:22:15.295Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-04-25T21:23:13.151Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"publishedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-04-25T21:22:15.287Z"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"balmacefa"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"collectionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"collection__01s11"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">17</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<aside class="notice">
+GET /NFT_contracts/{id || transactionId}
+</aside>
+
+<p>This is endpoint get a collection contract.</p>
+
+<p>You can use the internal id or transaction id to get the collection contract.
+The above will return the same result for:</p>
+
+<p>/NFT_contracts/17</p>
+
+<p>/NFT_contracts/ 0x070d9C506CF0cf31916F0586b76b94ce64478E81</p>
+
+<aside class="warning">
+Please consider that `transactionId` is the unique identifier of the collection contract in the blockchain.
+Use this value to scan and verify the transaction.
+</aside>
+
+<p>Example for MATIC Mumbai Testnet:
+<code>transactionId</code> : 0x070d9C506CF0cf31916F0586b76b94ce64478E81
+<a href="https://mumbai.polygonscan.com/tx/0x070d9C506CF0cf31916F0586b76b94ce64478E81">Polygon scan https://mumbai.polygonscan.com/tx/{transactionId}</a></p>
+<h1 id='list-collection-contracts'>List Collection Contracts 🕌📰</h1>
+<blockquote>
+<p>GET /NFT_contracts?{queryParams}
+The above is a response Example:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">18</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+                </span><span class="nl">"symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ProsperSymbol"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"blockchain"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MATIC"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"transactionId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xf743b841ce1a5e60229d6cadea5bb8998ccc5c738f7ff0fdf56481d861507c9f"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"signatureId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"62874642568cff2ddd08ebd1"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"contractAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xc40796eCB9583F9dce4fF292408d60FAFBa6e16E"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"useTestNet"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-20T07:24:55.080Z"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-20T07:42:41.808Z"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"publishedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2022-05-20T07:24:55.075Z"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"balmacefa"</span><span class="p">,</span><span class="w">
+                </span><span class="nl">"collectionName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Prosperity_symbols"</span><span class="w">
+            </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="err">...</span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="err">...</span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nl">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"pagination"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"page"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"pageSize"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"pageCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+        </span><span class="p">}</span><span class="w">
     </span><span class="p">}</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span></code></pre></div><h2 id='example'>Example:</h2><div class="highlight"><pre class="highlight javascript"><code><span class="nx">metaData_initial_historical</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">tokenId</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-  <span class="na">description</span><span class="p">:</span> 
-  <span class="na">external_url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">https://your_domain.xyz/nft/display_history/</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">image</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This will be set by payload: uploadIpfsFiles[0].setMetadataPath</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">animation_url</span><span class="p">:</span> <span class="dl">"</span><span class="s2">uploadIpfsFiles[1].setMetadataPath</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Rutendort, This political impact reputation an money stream look down - Art.19, vol 32</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">agrement</span><span class="p">:</span> <span class="p">{</span>
-<span class="na">impact_on</span><span class="p">:[</span>
-  <span class="p">{</span>
-    <span class="na">trait_type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Positional_thrust</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">trait_value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0.5</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">trait_unit</span><span class="p">:</span> <span class="dl">"</span><span class="s2">trs/</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">trait_description</span><span class="p">:</span> <span class="dl">"</span><span class="s2">This person agreed that the decision was made by the consultant and  that the decision was made by the consultant</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">trait_name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Positional thrust</span><span class="dl">"</span>
-  <span class="p">},</span>
-  <span class="p">{</span>
-    <span class="na">trait_type</span><span class="p">:</span> <span class="dl">"</span><span class="s2">contract_type</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">trait_value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">request proof of progress</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">trait_unit</span><span class="p">:</span> <span class="dl">"</span><span class="s2">20</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">initial_look_price_value_code</span><span class="p">:</span> <span class="dl">"</span><span class="s2">137c_369</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">14837563</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">impact_future_impact</span><span class="p">:</span> <span class="dl">"</span><span class="s2">30x</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">frequency</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span><span class="p">,</span>
-    <span class="na">reports_amount</span><span class="p">:</span> <span class="dl">"</span><span class="s2">weekly, montly</span><span class="dl">"</span><span class="p">,</span>
-  <span class="p">},</span>
-</code></pre></div>
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<aside class="notice">
+GET /NFT_contracts?{queryParams}
+</aside>
+
+<p>This is endpoint list all collection contracts.
+You can use query params to filter the results.</p>
+
+<aside class="warning">
+Please consider that `transactionId` is the unique identifier of the NFT in the blockchain.
+Use this value to scan and verify the transaction.
+</aside>
+
+<p>Example for MATIC Mumbai Testnet:
+<code>transactionId</code> : 0xf743b841ce1a5e60229d6cadea5bb8998ccc5c738f7ff0fdf56481d861507c9f
+<a href="https://mumbai.polygonscan.com/tx/0xf743b841ce1a5e60229d6cadea5bb8998ccc5c738f7ff0fdf56481d861507c9f">Polygon scan https://mumbai.polygonscan.com/tx/{transactionId}</a></p>
+<h3 id='description-of-query-params'>Description of query params</h3>
+<table><thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>collectionName</code></td>
+<td>Name of the collection</td>
+</tr>
+<tr>
+<td><code>symbol</code></td>
+<td>The collection&#39;s symbol. For example, the Bitcoin symbol is BTC.</td>
+</tr>
+<tr>
+<td><code>blockchain</code></td>
+<td>The collection&#39;s blockchain. For example, MATIC</td>
+</tr>
+<tr>
+<td><code>network</code></td>
+<td>The network of the order [ mainnet / testnet ]</td>
+</tr>
+<tr>
+<td><code>page</code></td>
+<td>The page number of the results.</td>
+</tr>
+<tr>
+<td><code>pageSize</code></td>
+<td>The number of results per page. max: 100</td>
+</tr>
+</tbody></table>
+
       </div>
       <div class="dark-box">
       </div>
