@@ -1,6 +1,7 @@
-# List NFT Orders 📜📄
+# GET List NFT Orders 📜📄
 
 > GET /NFT_orders?{queryParams}
+
 > The above is a response Example:
 
 ```json

@@ -1,6 +1,7 @@
-# Get / Find Collection Contract 🕵🏦🏪
+# GET / Find Collection Contract 🕵🏦🏪
 
 > GET /NFT_contracts/{id || transactionId}
+
 > The above is a response Example:
 
 

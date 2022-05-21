@@ -1,6 +1,7 @@
-# List Collection Contracts 🕌📰
+# GET List Collection Contracts 🕌📰
 
 > GET /NFT_contracts?{queryParams}
+
 > The above is a response Example:
 
 ```json

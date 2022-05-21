@@ -11,6 +11,8 @@ title: API Reference
 
 includes:
   - main
+  - queries/Contract/claimContract
+  - createNFT
   - webhooks/intro_webhook
   - webhooks/completed
   - webhooks/progress

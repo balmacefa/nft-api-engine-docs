@@ -1,6 +1,7 @@
-# Get / Find NFT Order 🕵📄🐝🍯
+# GET / Find NFT Order 🕵📄🐝🍯
 
 > GET /NFT_orders/{id || transactionId}
+
 > The above is a response Example:
 
 
